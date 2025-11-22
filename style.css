@@ -1,0 +1,299 @@
+
+/* ====== Reset & Base Styles ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f1f4f8;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ====== Header ====== */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+/* ====== Navigation ====== */
+nav {
+    background-color: #2c3e50;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* ====== Form Styling ====== */
+form {
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #219150;
+}
+
+/* ====== Footer ====== */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* ====== Header on Services Page ====== */
+header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    background: none;  /* or you could put a subtle background */
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+header span {
+    display: block;
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Reuse nav styles from home page (already in your CSS) */
+
+/* Main Services List Styling */
+.services-list {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.services-list ol {
+    list-style: decimal inside;
+    padding-left: 0; /* since inside type */
+}
+
+.services-list ol li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+/* Footer (reuse your existing footer rules) */
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .services-list {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header span {
+        font-size: 1rem;
+    }
+}
+
+h1 {
+ font-family: Arial, "Times New Roma";
+ font-size: 22px;
+ font-style: normal;
+ font-weight: 100;
+}
+
+
+
+/* style for about us page /*
+/* Reset and base styles */
+/* Only apply styles inside the About Us page */
+.about-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+
+/* Header styles */
+.about-page header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(42, 42, 46, 0.5);
+    border-radius: 10px;
+}
+
+.about-page header h1 {
+    font-size: 2.5rem;
+    color: #9ec4f0;
+}
+
+/* Content styles */
+.about-page p, 
+.about-page ul, 
+.about-page li,
+.about-page h3,
+.about-page h5 {
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.about-page h3 {
+    color: #6187a5;
+    margin-top: 30px;
+    font-size: 1.8rem;
+   
+}
+
+.about-page h5 {
+    color: #6187a5;
+    font-size: 1.2rem;
+}
+
+.about-page ul {
+    padding-left: 20px;
+}
+
+.about-page li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Navigation styles */
+.about-page nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-page nav a {
+    color: #eff0f2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-page nav a:hover {
+    color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 20px;
+    }
+
+    .about-page header h1 {
+        font-size: 2rem;
+    }
+
+    .about-page p {
+        font-size: 1rem;
+    }
+
+    .about-page nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
